@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivone Moreira da Silva (RU4540524) - Portfólio Pessoal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+    <div class="parallax-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Menu de Navegação -->
+    <header id="main-header">
+        <div class="container">
+            <h1 class="logo">Ivone<span>Moreira</span></h1>
+            
+            <nav id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button id="theme-toggle" title="Alternar Tema">
+                    <span class="icon">🌓</span>
+                </button>
+                <button id="mobile-menu-btn" class="mobile-only">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção: Sobre Mim -->
+        <section id="sobre" class="section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Sobre mim</h2>
+                    <p class="subtitle">Conheça um pouco da minha trajetória</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Olá! Meu nome é <strong>Ivone Moreira da Silva</strong>. Sou estudante de Tecnologia, apaixonada por transformar ideias em código funcional e elegante.</p>
+                        <p>Meus hobbies incluem cozinhar pratos deliciosos para minha família, estudar desenvolvimento web e cuidar dos meus filhos. Acredito que o aprendizado contínuo é a chave para o sucesso nesta área.</p>
+                        <p>Atualmente, estou focada em dominar os fundamentos da web (HTML, CSS e JavaScript) para construir bases sólidas para minha carreira profissional.</p>
+                    </div>
+                    <div class="about-image">
+                        <!-- Imagem de perfil (placeholder) -->
+                        <img src="https://picsum.photos/seed/ivone/300/300" alt="Foto" referrerPolicy="no-referrer">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Formação -->
+        <section id="formacao" class="section bg-alt reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Formação</h2>
+                    <p class="subtitle">Minha jornada educacional</p>
+                </div>
+                <div class="education-grid">
+                    <div class="card reveal">
+                        <h3>Pedagogia</h3>
+                        <p class="institution">Ensino Superior</p>
+                        <p>Formação voltada para o ensino e gestão educacional.</p>
+                    </div>
+                    <div class="card reveal">
+                        <h3>Tecnologia</h3>
+                        <p class="institution">UNINTER</p>
+                        <p class="period">Em andamento</p>
+                        <p>Atualmente cursando graduação na UNINTER, com foco em desenvolvimento e novas tecnologias.</p>
+                    </div>
+                    <div class="card reveal">
+                        <h3>Idiomas</h3>
+                        <ul class="list-unstyled">
+                            <li><strong>Português:</strong> Nativo</li>
+                            <li><strong>Inglês:</strong> Intermediário</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Portfólio -->
+        <section id="portfolio" class="section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Portfólio</h2>
+                    <p class="subtitle">Alguns dos meus projetos recentes</p>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item reveal">
+                        <img src="https://picsum.photos/seed/vidaplus/400/250" alt="VidaPlus" referrerPolicy="no-referrer">
+                        <div class="portfolio-info">
+                            <h3>VidaPlus</h3>
+                            <p>Dashboard para área médica com telemedicina integrada.</p>
+                            <a href="https://github.com/ivonemoreira1/vidaplus" class="btn-link" target="_blank">Ver no GitHub</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item reveal">
+                        <img src="https://picsum.photos/seed/faculdade/400/250" alt="Trabalhos da Faculdade" referrerPolicy="no-referrer">
+                        <div class="portfolio-info">
+                            <h3>Trabalhos da Faculdade</h3>
+                            <p>Este portfólio é um dos trabalhos desenvolvidos durante minha jornada acadêmica.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Contato -->
+        <section id="contato" class="section bg-alt reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contato</h2>
+                    <p class="subtitle">Vamos conversar? Mande uma mensagem!</p>
+                </div>
+                <div class="contact-wrapper">
+                    <form id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome aqui..." required>
+                            <span class="error-msg" id="error-nome">Por favor, informe seu nome.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                            <span class="error-msg" id="error-email">Informe um e-mail válido.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem..." required></textarea>
+                            <span class="error-msg" id="error-mensagem">A mensagem não pode estar vazia.</span>
+                        </div>
+                        <button type="submit" id="submit-btn" class="btn-primary">Enviar Mensagem</button>
+                    </form>
+                    
+                    <!-- Modal de Sucesso (Simulação) -->
+                    <div id="success-modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close-modal">&times;</span>
+                            <div class="modal-body">
+                                <span class="success-icon">✅</span>
+                                <h3>Sucesso!</h3>
+                                <p>Sua mensagem foi enviada com sucesso. Entrarei em contato em breve!</p>
+                                <button class="btn-primary" id="close-modal-btn">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <div class="container">
+            <p>&copy; 2026 Ivone Moreira da Silva. Todos os direitos reservados.</p>
+            <p>Desenvolvido para Atividade Prática - Fundamentos da Programação Web (UNINTER)</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
